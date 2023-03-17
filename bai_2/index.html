@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="wrap">
+            <header>
+                <div class="header_logo">
+                    LOGO
+                </div>
+
+                <div class="header_action">
+                    <button class="btn-common--pri">SignUp</button>
+                    <button class="btn-common--pri">SignIn</button>
+                </div>
+            </header>
+
+            <nav>
+                <div class="nav_list">
+                    <ul>
+                        <li >
+                            <div class="btn-common--pri">
+                                <a href="">Menu1</a>
+                            </div>
+                        </li>
+                        <li class="nav_item2">
+                            <div class="btn-common--pri">
+                                <a href="">Menu2</a>
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
+                            <ul style="height: 0; opacity: 0; margin-bottom: 0;" class="nav_sub_list nav_sub_item2">
+                                <li><a href="">Item1</a></li>
+                                <li><a href="">Item2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_item3">
+                            <div class="btn-common--pri">
+                                <a href="">Menu3</a>
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
+                        </li>
+                        <li >
+                            <div class="btn-common--pri">
+                                <a href="">Menu4</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav_search">
+                    <div class="nav_search_input">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <button class="nav_search_txt"><span>Go!</span></button>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <script>
+        const item2 = document.querySelector('.nav_item2')
+        const list2 = document.querySelector('.nav_sub_item2')
+
+        item2.onclick = () => {
+            if(list2.style.height === "0px") {
+                list2.style.opacity = "1"
+                list2.style.height = "71px"
+                list2.style.marginBottom = "6px"
+            } else {
+                list2.style.opacity = "0"
+                list2.style.height = "0px"
+                list2.style.marginBottom = "0"
+            }
+        }
+    </script>
+</body>
+
+</html>
