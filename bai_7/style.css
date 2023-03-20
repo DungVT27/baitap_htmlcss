@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.background_border{
+    background-color: rgb(247, 235, 72);
+    border-radius: 2px;
+    border: 2px solid rgb(158, 147, 24);
+}
+
+.body_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body_left {
+    width: 15%;
+    padding: 10px;
+}
+
+.body_left ul li {
+    list-style: none;
+}
+
+.body_midle {
+    padding: 5% 1%;
+    width: 67.5%;
+}
+
+.body_midle_content h2 {
+    padding-bottom: 10px;
+}
+
+.body_right {
+    width: 15%;
+    /* border: 2px solid rgb(183, 18, 18); */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slider {
+    margin-bottom: 10px;
+}
+
+.slider, .adversiting {
+    width: 100%;
+    padding: 28% 10px;
+}
+
+.footer {
+    margin-top: 10px;
+}
+
+.header, .footer {
+    width: 100%;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .body_content {
+        flex-direction: column;
+        display: block;
+    }
+
+    .body_left {
+        display: flex;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .body_left ul {
+        display: flex;
+        width: 97%;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .body_midle {
+        margin-top: 10px;
+        float: right;
+        width: 84%;
+        height: 150px;
+    }
+
+    .body_right {
+        margin-top: 10px;
+        margin-bottom: -28%;
+    }
+
+    .slider {
+        height: 150px;
+    }
+
+    .adversiting {
+        padding: 10px;
+        margin-bottom: -1%;
+    }
+
+    .footer {
+        float: right;
+        width: 84%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .body_content {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .body_left ul {
+        display: block;
+        text-align: start;
+    }
+
+    .footer {
+        float: none;
+        width: 100%;
+    }
+
+    .body_right {
+        margin-bottom: 0;
+    }
+
+    .body_midle {
+        width: 100%;
+    }
+
+    .adversiting,
+    .slider {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .adversiting {
+        margin-bottom: 1px;
+    }
+
+    .body_right {
+        width: 100%;
+    }
+}

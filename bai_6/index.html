@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1>REGISTER</h1>
+            <form action="" method="post">
+                <div class="name">
+                    <label for="name">Name*</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your name ...">
+                </div>
+
+                <div class="gender">
+                    <label>Sex</label>
+                    <div>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" checked>
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="date">
+                    <label for="">Date of birth*</label>
+                    <div class="date_wrapper">
+                        <div class="day">
+                            <select name="" id="">
+                                <option name="day" value="">Day</option>
+                                <option name="day" value="1">1</option>
+                                <option name="day" value="2">2</option>
+                                <option name="day" value="3">3</option>
+                                <option name="day" value="4">4</option>
+                                <option name="day" value="5">5</option>
+                                <option name="day" value="6">6</option>
+                                <option name="day" value="7">7</option>
+                            </select>
+                        </div>
+
+                        <div class="month">
+                            <select name="" id="">
+                                <option name="month" value="">Month</option>
+                                <option name="month" value="1">1</option>
+                                <option name="month" value="2">2</option>
+                                <option name="month" value="3">3</option>
+                                <option name="month" value="4">4</option>
+                                <option name="month" value="5">5</option>
+                                <option name="month" value="6">6</option>
+                                <option name="month" value="7">7</option>
+                            </select>
+                        </div>
+
+                        <div class="year">
+                            <select name="" id="">
+                                <option value="">Year</option>
+                                <option name="year" value="2023">2023</option>
+                                <option name="year" value="2022">2022</option>
+                                <option name="year" value="2021">2021</option>
+                                <option name="year" value="2020">2020</option>
+                                <option name="year" value="2019">2019</option>
+                                <option name="year" value="2018">2018</option>
+                                <option name="year" value="2017">2017</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="password">
+                    <label for="password">Password*</label>
+                    <input id="password" name="password" type="password" placeholder="Enter your password ...">
+                </div>
+
+                <div class="confirm">
+                    <label for="confirm">Confirm Password*</label>
+                    <input id="confirm" name="password_confirm" type="password">
+                </div>
+
+                <div class="email">
+                    <label for="email">Email*</label>
+                    <input id="email" name="email" type="email">
+                </div>
+
+                <div class="message">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="" cols="30" rows="5"></textarea>
+                </div>
+            </form>
+
+            <div class="accept">
+                <input type="checkbox" name="accept" id="accept" checked>
+                <label for="accept">I accept Terms and Conditions</label>
+            </div>
+
+            <div class="action">
+                <button type="button">Reset</button>
+                <button type="submit">Register</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

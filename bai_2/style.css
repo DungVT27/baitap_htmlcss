@@ -160,7 +160,7 @@ header, nav {
 
 }
 
-@media (max-width: 840px) {
+@media (max-width: 880px) {
 
     .wrap {
         border: 1px solid black;
@@ -257,13 +257,3 @@ header, nav {
 
 }
 
-@media (max-width: 360px) {
-    header {
-        flex-direction: column;
-    }
-
-    header div {
-        margin: 5px 10px;
-        width: 100%;
-    }
-}
