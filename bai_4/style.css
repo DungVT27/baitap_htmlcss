@@ -95,6 +95,9 @@ section>div {
     }
 
     .img_left {
+        width: 50px;
+        line-height: 50px;
+        font-size: 10px;
         margin-bottom: 10px;
     }
 }
