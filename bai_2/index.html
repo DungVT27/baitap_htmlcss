@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <div class="main">
-        <div class="wrap">
+    <main class="container">
+        <div class="wrapper">
             <header>
                 <div class="header_logo">
                     LOGO
@@ -27,19 +27,17 @@
             <nav>
                 <div class="nav_list">
                     <ul>
-                        <li >
-                            <div class="btn-common--pri">
-                                <a href="">Menu1</a>
-                            </div>
+                        <li class="nav_item1 btn-common--pri">
+                            Menu1
                         </li>
                         <li class="nav_item2">
                             <div class="btn-common--pri">
                                 <a href="">Menu2</a>
                                 <i class="fa-solid fa-sort-down"></i>
                             </div>
-                            <ul style="height: 0; opacity: 0; margin-bottom: 0;" class="nav_sub_list nav_sub_item2">
-                                <li><a class="" href="">Item1</a></li>
-                                <li><a href="">Item2</a></li>
+                            <ul class="nav_sub_list nav_sub_item2">
+                                <li><a class="ul_item2" href="">Item1</a></li>
+                                <li><a class="ul_item2" href="">Item2</a></li>
                             </ul>
                         </li>
                         <li class="nav_item3">
@@ -57,32 +55,14 @@
                 </div>
 
                 <div class="nav_search">
-                    <div class="nav_search_input">
-                        <input type="text" placeholder="Search...">
-                    </div>
+                    <input class="nav_search_input" type="text" placeholder="Search...">
                     <button class="nav_search_txt"><span>Go!</span></button>
                 </div>
             </nav>
 
         </div>
-    </div>
+    </main>
 
-    <script>
-        const item2 = document.querySelector('.nav_item2')
-        const list2 = document.querySelector('.nav_sub_item2')
-
-        item2.onclick = () => {
-            if(list2.style.height === "0px") {
-                list2.style.opacity = "1"
-                list2.style.height = "71px"
-                list2.style.marginBottom = "6px"
-            } else {
-                list2.style.opacity = "0"
-                list2.style.height = "0px"
-                list2.style.marginBottom = "0"
-            }
-        }
-    </script>
 </body>
 
 </html>
