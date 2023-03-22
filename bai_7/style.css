@@ -6,12 +6,11 @@
 
 header {
     margin-bottom: 10px;
-    border-radius: 2px;
 }
 
 .background_border{
     background-color: rgb(247, 235, 72);
-    border-radius: 2px;
+    border-radius: 5px;
     border: 2px solid rgb(158, 147, 24);
 }
 
@@ -40,10 +39,8 @@ header {
 
 .body_right {
     width: 15%;
-    /* border: 2px solid rgb(183, 18, 18); */
     display: flex;
     flex-direction: column;
-
 }
 
 .slider {
@@ -135,13 +132,14 @@ header {
     }
 
     .body_midle {
+        height: auto;
         width: 100%;
     }
 
-    .adversiting,
     .slider {
         padding: 10px;
         width: 100%;
+        height: 45px;
     }
 
     .adversiting {

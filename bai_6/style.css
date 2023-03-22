@@ -79,10 +79,11 @@ input[type=radio], input[type=checbox] {
     margin-right: 20px;
 }
 
-.password, .confirm, .email, .message, .date {
+.name, .gender,.password, .confirm, .email, .message, .date {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -149,9 +150,13 @@ input[type=radio], input[type=checbox] {
 }
 
 @media (max-width: 860px) {
+    .message label{
+        width: 100%;
+    }
+
     .name input, .gender > div, .date_wrapper, .accept, .password input, .confirm input,
     .email input, .message textarea{
-        max-width: 60%;
+        max-width: 100%;
     }
 
     .day, .month, .year {
