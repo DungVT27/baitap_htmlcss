@@ -9,6 +9,10 @@
     font-size: 1.6rem;
 }
 
+.w100{
+    width: 100%;
+}
+
 .top_wrapper {
     border-bottom: 1px solid black;
     padding-bottom: 20px;
@@ -48,6 +52,10 @@ section {
     border-bottom: 1px solid black;
 }
 
+.content_first_heading{
+    width: 50%;
+}
+
 .banner.banner_first {
     float: right;
     width: 50%;
@@ -69,6 +77,10 @@ section {
 
 .section_last {
     display: inline-block;
+}
+
+.section_first{
+    display: flex;
 }
 
 .content .content_desc:last-child {
@@ -134,12 +146,14 @@ section {
     .bottom_list {
         grid-template-columns: 1fr;
     }
+
+    .banner_first, .content_first_heading{
+        width: 100%;
+    }
+    
 }
 
 @media (max-width: 840px) {
-    .section {
-        flex-direction: column-reverse;
-    }
 
     .section_last {
         flex-direction: column;
